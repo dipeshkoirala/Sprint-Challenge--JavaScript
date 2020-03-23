@@ -42,8 +42,9 @@ const dinasaur = [
 // Using your dinosaur objects, log answers to these questions:
 
 // How much did tyrannosaurus weigh?
-console.log();
 
+let temp = dinasaur.filter(a => a.name === "tyrannosaurus");
+console.log(temp.map(a => a.weight));
 // What was the diet of a velociraptor?
 console.log();
 

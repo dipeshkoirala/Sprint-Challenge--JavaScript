@@ -37,5 +37,11 @@ CuboidMaker.prototype.surfaceArea = function(calVol) {
 */
 var cuboid = new CuboidMaker(4, 5, 5);
 // Test your volume and surfaceArea methods by uncommenting the logs below:
+console.log(
+  "_________Output of Prototypes function___________As expected //100 & //130"
+);
 console.log(cuboid.volume()); // 100
 console.log(cuboid.surfaceArea()); // 130
+console.log(
+  "_____________________End of Output of Prototypes Function___________"
+);
