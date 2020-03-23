@@ -46,7 +46,8 @@ const dinasaur = [
 let temp = dinasaur.filter(a => a.name === "tyrannosaurus");
 console.log(temp.map(a => a.weight));
 // What was the diet of a velociraptor?
-console.log();
+let velociraptorDiets = dinasaur.filter(a => a.name === "velociraptor");
+console.log(velociraptorDiets.map(a => a.diet));
 
 // How long was a stegosaurus?
 console.log();
