@@ -50,7 +50,8 @@ let velociraptorDiets = dinasaur.filter(a => a.name === "velociraptor");
 console.log(velociraptorDiets.map(a => a.diet));
 
 // How long was a stegosaurus?
-console.log();
+let stegosaurus = dinasaur.filter(a => a.name === "stegosaurus");
+console.log(stegosaurus.map(a => a.length));
 
 // What time period did tyrannosaurus live in?
 console.log();
