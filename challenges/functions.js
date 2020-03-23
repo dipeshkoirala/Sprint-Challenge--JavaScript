@@ -24,15 +24,23 @@ function greeting(a, b) {
   return `Hello ${a} ${b}, nice to meet you!`;
 }
 /* Step 3: Check your work by un-commenting the following calls to consume(): */
+console.log("--------------Output: Callback Function-----------------");
 console.log(consume(2, 2, add)); // 4
 console.log(consume(10, 16, multiply)); // 160
 console.log(consume("Mary", "Poppins", greeting)); // Hello Mary Poppins, nice to meet you!
-
+console.log("--------------Output: Callback Function-----------------");
 // ==== Closures ====
 
 // Explain in your own words why nestedfunction can access the variable internal.
 
 // Explanation:
+/*Ans: Here first of all what happens when we run is - it's gonna call the myFunction() 
+{ it's console logging the global variable-external} and print the "I'm outside the function"
+ then the program will look for the return aby sequencially going through each steps 
+until it reach its scope{}- while going through each lines sequencially it prints the
+nestedFunction() as well,
+If we comment out myFunction the inner function ie nestedFunction is never gonna run
+*/
 
 const external = "I'm outside the function";
 
@@ -45,4 +53,7 @@ function myFunction() {
   }
   nestedFunction();
 }
-myFunction();
+myFunction(); /* myFunction() returns the outside function if we comment this out the nestedFunction will not return anything
+               myFunction when we run the program first call myFunction which is consoling out the external global variable 
+               called external
+             */
